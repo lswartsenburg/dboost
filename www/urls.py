@@ -9,6 +9,6 @@ import app.views
 
 
 urlpatterns = [
-    url(r'^$', hello.views.index, name='index'),
+    url(r'^$', app.views.index, name='index'),
     path('admin/', admin.site.urls),
 ]
