@@ -1,7 +1,6 @@
-def app(environ, start_response):
-    data = b"Hello, World!\n"
-    start_response("200 OK", [
-        ("Content-Type", "text/plain"),
-        ("Content-Length", str(len(data)))
-    ])
-    return iter([data])
+import os
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "www.settings")
+
+from django.core.wsgi import get_wsgi_application
+
+application = get_wsgi_application()
