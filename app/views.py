@@ -8,9 +8,9 @@ def index(request):
 
 def db(request):
 
-    greeting = Greeting()
+    greeting = TestObject()
     greeting.save()
 
-    greetings = Greeting.objects.all()
+    greetings = TestObject.objects.all()
 
     return render(request, 'db.html', {'greetings': greetings})    
