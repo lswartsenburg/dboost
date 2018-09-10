@@ -1,5 +1,5 @@
 [[source]]
-url = "https://dboost.herokuapp.com/"
+url = "https://pypi.python.org/simple"
 verify_ssl = true
 
 [packages]
@@ -8,4 +8,4 @@ gunicorn = "*"
 django-heroku = "*"
 
 [requires]
-python_version = "3.6"
+python_version = "3.7"
